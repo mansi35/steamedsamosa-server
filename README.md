@@ -1,2 +1,3 @@
-# sTEAMedSaMoSA-server
-HackaNoodle Server Repo
+# Strapi application
+
+A quick description of your strapi application
