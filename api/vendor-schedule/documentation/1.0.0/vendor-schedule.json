@@ -631,6 +631,15 @@
                   "type": "string"
                 }
               },
+              "isVendor": {
+                "type": "boolean"
+              },
+              "customer_reviews": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "created_by": {
                 "type": "string"
               },
@@ -727,6 +736,15 @@
                   "type": "string"
                 }
               },
+              "isVendor": {
+                "type": "boolean"
+              },
+              "customer_reviews": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "created_by": {
                 "type": "string"
               },
@@ -778,6 +796,18 @@
               },
               "vendor_schedule": {
                 "type": "string"
+              },
+              "package": {
+                "type": "string"
+              },
+              "eventType": {
+                "type": "string"
+              },
+              "customer_reviews": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"

@@ -23,13 +23,13 @@
       "via": "vendor_schedules"
     },
     "vendor": {
+      "via": "vendor_schedules",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "vendor_schedules"
+      "model": "user"
     },
     "event": {
-      "model": "event",
-      "via": "vendor_schedule"
+      "via": "vendor_schedule",
+      "model": "event"
     }
   }
 }

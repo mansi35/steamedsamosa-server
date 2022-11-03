@@ -1396,6 +1396,50 @@
                 }
               }
             }
+          },
+          "isVendor": {
+            "type": "boolean"
+          },
+          "customer_reviews": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "rating"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "feedback": {
+                  "type": "string"
+                },
+                "rating": {
+                  "type": "integer"
+                },
+                "client": {
+                  "type": "string"
+                },
+                "event": {
+                  "type": "string"
+                },
+                "package": {
+                  "type": "string"
+                },
+                "vendor": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -1478,6 +1522,15 @@
             "type": "string"
           },
           "vendor_schedules": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "isVendor": {
+            "type": "boolean"
+          },
+          "customer_reviews": {
             "type": "array",
             "items": {
               "type": "string"

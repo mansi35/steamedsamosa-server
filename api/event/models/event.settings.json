@@ -54,6 +54,17 @@
     "vendor_schedule": {
       "via": "event",
       "model": "vendor-schedule"
+    },
+    "package": {
+      "via": "events",
+      "model": "package"
+    },
+    "eventType": {
+      "type": "string"
+    },
+    "customer_reviews": {
+      "via": "event",
+      "collection": "customer-reviews"
     }
   }
 }

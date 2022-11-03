@@ -1,18 +1,19 @@
 {
   "paths": {
-    "/events": {
+    "/customer-reviews": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the customer-reviews's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve customer-reviews document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Event"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Event"
+          "Customer-reviews"
         ],
         "parameters": [
           {
@@ -194,79 +195,16 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Create a new customer-reviews record",
         "responses": {
           "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Event"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Event"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewEvent"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/events/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
+            "description": "Retrieve customer-reviews document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,22 +244,36 @@
         },
         "summary": "",
         "tags": [
-          "Event"
+          "Customer-reviews"
         ],
-        "parameters": []
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewCustomer-reviews"
+              }
+            }
+          }
+        }
       }
     },
-    "/events/{id}": {
+    "/customer-reviews/count": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Retrieve the number of customer-reviews documents",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve customer-reviews document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Event"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -359,7 +311,64 @@
         },
         "summary": "",
         "tags": [
-          "Event"
+          "Customer-reviews"
+        ],
+        "parameters": []
+      }
+    },
+    "/customer-reviews/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "Find one customer-reviews record",
+        "responses": {
+          "200": {
+            "description": "Retrieve customer-reviews document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Customer-reviews"
         ],
         "parameters": [
           {
@@ -376,14 +385,18 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single customer-reviews record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve customer-reviews document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Event"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -421,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Event"
+          "Customer-reviews"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewEvent"
+                "$ref": "#/components/schemas/NewCustomer-reviews"
               }
             }
           }
@@ -449,10 +462,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single customer-reviews record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single customer-reviews based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Event"
+          "Customer-reviews"
         ],
         "parameters": [
           {
@@ -514,112 +527,127 @@
   },
   "components": {
     "schemas": {
-      "Event": {
+      "Customer-reviews": {
         "required": [
-          "id"
+          "id",
+          "rating"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "name": {
+          "feedback": {
             "type": "string"
           },
-          "basicDescription": {
-            "type": "string"
+          "rating": {
+            "type": "integer"
           },
-          "images": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "client": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "displayName": {
+                "type": "string"
+              },
+              "vendorCategory": {
+                "type": "string"
+              },
+              "addressLine1": {
+                "type": "string"
+              },
+              "displayImages": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "basicCateringFees": {
+                "type": "integer"
+              },
+              "addressLine2": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
+              "pincode": {
+                "type": "string"
+              },
+              "specialization": {
+                "type": "string"
+              },
+              "vendorDescription": {
+                "type": "string"
+              },
+              "discountPercent": {
+                "type": "integer"
+              },
+              "maxDiscount": {
+                "type": "integer"
+              },
+              "languages": {
+                "type": "string"
+              },
+              "vendor_schedules": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "isVendor": {
+                "type": "boolean"
+              },
+              "customer_reviews": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
-          "basicPrice": {
-            "type": "integer"
-          },
-          "customizable": {
-            "type": "boolean"
-          },
-          "premium": {
-            "type": "boolean"
-          },
-          "standardPrice": {
-            "type": "integer"
-          },
-          "premiumPrice": {
-            "type": "integer"
-          },
-          "standardDescription": {
-            "type": "string"
-          },
-          "premiumDescription": {
-            "type": "string"
-          },
-          "vendor_schedule": {
+          "event": {
             "required": [
               "id"
             ],
@@ -627,20 +655,53 @@
               "id": {
                 "type": "string"
               },
-              "startDate": {
+              "name": {
                 "type": "string"
               },
-              "endDate": {
+              "basicDescription": {
                 "type": "string"
               },
-              "client": {
+              "images": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "basicPrice": {
+                "type": "integer"
+              },
+              "customizable": {
+                "type": "boolean"
+              },
+              "premium": {
+                "type": "boolean"
+              },
+              "standardPrice": {
+                "type": "integer"
+              },
+              "premiumPrice": {
+                "type": "integer"
+              },
+              "standardDescription": {
                 "type": "string"
               },
-              "vendor": {
+              "premiumDescription": {
                 "type": "string"
               },
-              "event": {
+              "vendor_schedule": {
                 "type": "string"
+              },
+              "package": {
+                "type": "string"
+              },
+              "eventType": {
+                "type": "string"
+              },
+              "customer_reviews": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"
@@ -699,47 +760,108 @@
               }
             }
           },
-          "eventType": {
-            "type": "string"
-          },
-          "customer_reviews": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "rating"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "feedback": {
-                  "type": "string"
-                },
-                "rating": {
-                  "type": "integer"
-                },
-                "client": {
-                  "type": "string"
-                },
-                "event": {
-                  "type": "string"
-                },
-                "package": {
-                  "type": "string"
-                },
-                "vendor": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "vendor": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "displayName": {
+                "type": "string"
+              },
+              "vendorCategory": {
+                "type": "string"
+              },
+              "addressLine1": {
+                "type": "string"
+              },
+              "displayImages": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "basicCateringFees": {
+                "type": "integer"
+              },
+              "addressLine2": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
+              "pincode": {
+                "type": "string"
+              },
+              "specialization": {
+                "type": "string"
+              },
+              "vendorDescription": {
+                "type": "string"
+              },
+              "discountPercent": {
+                "type": "integer"
+              },
+              "maxDiscount": {
+                "type": "integer"
+              },
+              "languages": {
+                "type": "string"
+              },
+              "vendor_schedules": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "isVendor": {
+                "type": "boolean"
+              },
+              "customer_reviews": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -749,49 +871,28 @@
           }
         }
       },
-      "NewEvent": {
+      "NewCustomer-reviews": {
+        "required": [
+          "rating"
+        ],
         "properties": {
-          "name": {
+          "feedback": {
             "type": "string"
           },
-          "basicDescription": {
-            "type": "string"
-          },
-          "basicPrice": {
+          "rating": {
             "type": "integer"
           },
-          "customizable": {
-            "type": "boolean"
-          },
-          "premium": {
-            "type": "boolean"
-          },
-          "standardPrice": {
-            "type": "integer"
-          },
-          "premiumPrice": {
-            "type": "integer"
-          },
-          "standardDescription": {
+          "client": {
             "type": "string"
           },
-          "premiumDescription": {
-            "type": "string"
-          },
-          "vendor_schedule": {
+          "event": {
             "type": "string"
           },
           "package": {
             "type": "string"
           },
-          "eventType": {
+          "vendor": {
             "type": "string"
-          },
-          "customer_reviews": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "published_at": {
             "type": "string",
@@ -807,9 +908,5 @@
       }
     }
   },
-  "tags": [
-    {
-      "name": "Event"
-    }
-  ]
+  "tags": []
 }

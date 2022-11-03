@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customer_reviews",
+  "info": {
+    "name": "Customer Reviews"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "feedback": {
+      "type": "text"
+    },
+    "rating": {
+      "type": "integer",
+      "required": true,
+      "max": 5
+    },
+    "client": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "customer_reviews"
+    },
+    "event": {
+      "model": "event",
+      "via": "customer_reviews"
+    },
+    "package": {
+      "model": "package",
+      "via": "customer_reviews"
+    },
+    "vendor": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "customer_reviews"
+    }
+  }
+}
