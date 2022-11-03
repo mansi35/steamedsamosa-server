@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/vendor-unavailabilities": {
+    "/vendor-schedules": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Vendor-unavailability"
+          "Vendor-schedule"
         ],
         "parameters": [
           {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Vendor-unavailability"
+          "Vendor-schedule"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +252,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewVendor-unavailability"
+                "$ref": "#/components/schemas/NewVendor-schedule"
               }
             }
           }
         }
       }
     },
-    "/vendor-unavailabilities/count": {
+    "/vendor-schedules/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,12 +311,12 @@
         },
         "summary": "",
         "tags": [
-          "Vendor-unavailability"
+          "Vendor-schedule"
         ],
         "parameters": []
       }
     },
-    "/vendor-unavailabilities/{id}": {
+    "/vendor-schedules/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Vendor-unavailability"
+          "Vendor-schedule"
         ],
         "parameters": [
           {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Vendor-unavailability"
+          "Vendor-schedule"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewVendor-unavailability"
+                "$ref": "#/components/schemas/NewVendor-schedule"
               }
             }
           }
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Vendor-unavailability"
+          "Vendor-schedule"
         ],
         "parameters": [
           {
@@ -527,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Vendor-unavailability": {
+      "Vendor-schedule": {
         "required": [
           "id"
         ],
@@ -625,7 +625,7 @@
               "languages": {
                 "type": "string"
               },
-              "vendor_unavailabilities": {
+              "vendor_schedules": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -721,7 +721,7 @@
               "languages": {
                 "type": "string"
               },
-              "vendor_unavailabilities": {
+              "vendor_schedules": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -735,8 +735,60 @@
               }
             }
           },
-          "isBooked": {
-            "type": "boolean"
+          "event": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "basicDescription": {
+                "type": "string"
+              },
+              "images": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "basicPrice": {
+                "type": "integer"
+              },
+              "customizable": {
+                "type": "boolean"
+              },
+              "premium": {
+                "type": "boolean"
+              },
+              "standardPrice": {
+                "type": "integer"
+              },
+              "premiumPrice": {
+                "type": "integer"
+              },
+              "standardDescription": {
+                "type": "string"
+              },
+              "premiumDescription": {
+                "type": "string"
+              },
+              "vendor_schedule": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -744,7 +796,7 @@
           }
         }
       },
-      "NewVendor-unavailability": {
+      "NewVendor-schedule": {
         "properties": {
           "startDate": {
             "type": "string",
@@ -760,8 +812,8 @@
           "vendor": {
             "type": "string"
           },
-          "isBooked": {
-            "type": "boolean"
+          "event": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

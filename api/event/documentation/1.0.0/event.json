@@ -619,6 +619,40 @@
           "premiumDescription": {
             "type": "string"
           },
+          "vendor_schedule": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "startDate": {
+                "type": "string"
+              },
+              "endDate": {
+                "type": "string"
+              },
+              "client": {
+                "type": "string"
+              },
+              "vendor": {
+                "type": "string"
+              },
+              "event": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -652,6 +686,9 @@
             "type": "string"
           },
           "premiumDescription": {
+            "type": "string"
+          },
+          "vendor_schedule": {
             "type": "string"
           },
           "published_at": {

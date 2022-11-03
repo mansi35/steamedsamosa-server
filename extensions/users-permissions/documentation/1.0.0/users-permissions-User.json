@@ -1360,7 +1360,7 @@
           "languages": {
             "type": "string"
           },
-          "vendor_unavailabilities": {
+          "vendor_schedules": {
             "type": "array",
             "items": {
               "required": [
@@ -1382,8 +1382,8 @@
                 "vendor": {
                   "type": "string"
                 },
-                "isBooked": {
-                  "type": "boolean"
+                "event": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -1477,7 +1477,7 @@
           "languages": {
             "type": "string"
           },
-          "vendor_unavailabilities": {
+          "vendor_schedules": {
             "type": "array",
             "items": {
               "type": "string"

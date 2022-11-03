@@ -110,9 +110,9 @@
     "languages": {
       "type": "text"
     },
-    "vendor_unavailabilities": {
+    "vendor_schedules": {
       "via": "vendor",
-      "collection": "vendor-unavailability"
+      "collection": "vendor-schedule"
     }
   }
 }

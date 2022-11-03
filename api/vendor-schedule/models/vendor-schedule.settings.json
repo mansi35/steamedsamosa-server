@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "vendor_unavailabilities",
+  "collectionName": "vendor_schedules",
   "info": {
-    "name": "Vendor Unavailability"
+    "name": "Vendor Schedule"
   },
   "options": {
     "increments": true,
@@ -20,15 +20,16 @@
     "client": {
       "plugin": "users-permissions",
       "model": "user",
-      "via": "vendor_unavailabilities"
+      "via": "vendor_schedules"
     },
     "vendor": {
       "plugin": "users-permissions",
       "model": "user",
-      "via": "vendor_unavailabilities"
+      "via": "vendor_schedules"
     },
-    "isBooked": {
-      "type": "boolean"
+    "event": {
+      "model": "event",
+      "via": "vendor_schedule"
     }
   }
 }

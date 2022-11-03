@@ -606,7 +606,7 @@
                 "languages": {
                   "type": "string"
                 },
-                "vendor_unavailabilities": {
+                "vendor_schedules": {
                   "type": "array",
                   "items": {
                     "type": "string"

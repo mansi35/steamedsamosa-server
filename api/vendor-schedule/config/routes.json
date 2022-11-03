@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vendor-schedules",
+      "handler": "vendor-schedule.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vendor-schedules/count",
+      "handler": "vendor-schedule.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vendor-schedules/:id",
+      "handler": "vendor-schedule.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vendor-schedules",
+      "handler": "vendor-schedule.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vendor-schedules/:id",
+      "handler": "vendor-schedule.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vendor-schedules/:id",
+      "handler": "vendor-schedule.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
