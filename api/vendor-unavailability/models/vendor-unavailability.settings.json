@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vendor_unavailabilities",
+  "info": {
+    "name": "Vendor Unavailability"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "startDate": {
+      "type": "datetime"
+    },
+    "endDate": {
+      "type": "datetime"
+    },
+    "client": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "vendor_unavailabilities"
+    },
+    "vendor": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "vendor_unavailabilities"
+    },
+    "isBooked": {
+      "type": "boolean"
+    }
+  }
+}

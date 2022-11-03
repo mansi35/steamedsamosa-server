@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vendor-unavailabilities",
+      "handler": "vendor-unavailability.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vendor-unavailabilities/count",
+      "handler": "vendor-unavailability.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vendor-unavailabilities/:id",
+      "handler": "vendor-unavailability.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vendor-unavailabilities",
+      "handler": "vendor-unavailability.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vendor-unavailabilities/:id",
+      "handler": "vendor-unavailability.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vendor-unavailabilities/:id",
+      "handler": "vendor-unavailability.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menus",
+  "info": {
+    "name": "Menu"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category": {
+      "type": "string"
+    },
+    "dishName": {
+      "type": "text"
+    },
+    "isVeg": {
+      "type": "boolean"
+    },
+    "price": {
+      "type": "biginteger"
+    }
+  }
+}
