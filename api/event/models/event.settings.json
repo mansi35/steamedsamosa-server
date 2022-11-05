@@ -75,6 +75,14 @@
     },
     "flowersIncluded": {
       "type": "text"
+    },
+    "discount": {
+      "type": "integer",
+      "max": 100,
+      "default": 0
+    },
+    "maxDiscountValue": {
+      "type": "integer"
     }
   }
 }

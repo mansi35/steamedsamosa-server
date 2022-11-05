@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/05/2022 1:02:07 PM"
+    "x-generation-date": "11/05/2022 6:18:58 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5564,6 +5564,12 @@
               "flowersIncluded": {
                 "type": "string"
               },
+              "discount": {
+                "type": "integer"
+              },
+              "maxDiscountValue": {
+                "type": "integer"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -6076,6 +6082,13 @@
           "flowersIncluded": {
             "type": "string"
           },
+          "discount": {
+            "type": "integer",
+            "default": 0
+          },
+          "maxDiscountValue": {
+            "type": "integer"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6137,6 +6150,13 @@
           },
           "flowersIncluded": {
             "type": "string"
+          },
+          "discount": {
+            "type": "integer",
+            "default": 0
+          },
+          "maxDiscountValue": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -6283,6 +6303,12 @@
               },
               "flowersIncluded": {
                 "type": "string"
+              },
+              "discount": {
+                "type": "integer"
+              },
+              "maxDiscountValue": {
+                "type": "integer"
               },
               "published_at": {
                 "type": "string"
@@ -6488,6 +6514,12 @@
                 },
                 "flowersIncluded": {
                   "type": "string"
+                },
+                "discount": {
+                  "type": "integer"
+                },
+                "maxDiscountValue": {
+                  "type": "integer"
                 },
                 "published_at": {
                   "type": "string"
@@ -6891,6 +6923,12 @@
               },
               "flowersIncluded": {
                 "type": "string"
+              },
+              "discount": {
+                "type": "integer"
+              },
+              "maxDiscountValue": {
+                "type": "integer"
               },
               "published_at": {
                 "type": "string"

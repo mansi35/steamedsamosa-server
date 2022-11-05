@@ -673,6 +673,12 @@
                 "flowersIncluded": {
                   "type": "string"
                 },
+                "discount": {
+                  "type": "integer"
+                },
+                "maxDiscountValue": {
+                  "type": "integer"
+                },
                 "published_at": {
                   "type": "string"
                 },
