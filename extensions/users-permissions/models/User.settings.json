@@ -110,16 +110,16 @@
     "languages": {
       "type": "text"
     },
-    "vendor_schedules": {
-      "via": "vendor",
-      "collection": "vendor-schedule"
-    },
     "isVendor": {
       "type": "boolean"
     },
     "customer_reviews": {
       "via": "vendor",
       "collection": "customer-reviews"
+    },
+    "vendor_schedule": {
+      "via": "vendor",
+      "model": "vendor-schedule"
     }
   }
 }

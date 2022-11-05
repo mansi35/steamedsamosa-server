@@ -624,12 +624,6 @@
               "languages": {
                 "type": "string"
               },
-              "vendor_schedules": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "isVendor": {
                 "type": "boolean"
               },
@@ -638,6 +632,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "vendor_schedule": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -688,9 +685,6 @@
               "premiumDescription": {
                 "type": "string"
               },
-              "vendor_schedule": {
-                "type": "string"
-              },
               "package": {
                 "type": "string"
               },
@@ -702,6 +696,21 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "menu": {
+                "type": "string"
+              },
+              "vendor_schedule": {
+                "type": "string"
+              },
+              "extra_flowers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "flowersIncluded": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -748,6 +757,12 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "isPremium": {
+                "type": "boolean"
+              },
+              "isCustomizable": {
+                "type": "boolean"
               },
               "published_at": {
                 "type": "string"
@@ -842,12 +857,6 @@
               "languages": {
                 "type": "string"
               },
-              "vendor_schedules": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "isVendor": {
                 "type": "boolean"
               },
@@ -856,6 +865,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "vendor_schedule": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"

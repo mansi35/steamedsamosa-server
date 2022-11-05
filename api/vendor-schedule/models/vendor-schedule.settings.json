@@ -20,16 +20,20 @@
     "client": {
       "plugin": "users-permissions",
       "model": "user",
-      "via": "vendor_schedules"
+      "via": "vendor_schedule"
     },
     "vendor": {
-      "via": "vendor_schedules",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "vendor_schedule"
     },
     "event": {
       "via": "vendor_schedule",
       "model": "event"
+    },
+    "isBooked": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

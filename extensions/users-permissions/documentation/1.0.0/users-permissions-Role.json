@@ -606,12 +606,6 @@
                 "languages": {
                   "type": "string"
                 },
-                "vendor_schedules": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "isVendor": {
                   "type": "boolean"
                 },
@@ -620,6 +614,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "vendor_schedule": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"

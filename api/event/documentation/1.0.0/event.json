@@ -619,40 +619,6 @@
           "premiumDescription": {
             "type": "string"
           },
-          "vendor_schedule": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "startDate": {
-                "type": "string"
-              },
-              "endDate": {
-                "type": "string"
-              },
-              "client": {
-                "type": "string"
-              },
-              "vendor": {
-                "type": "string"
-              },
-              "event": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "package": {
             "required": [
               "id"
@@ -687,6 +653,12 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "isPremium": {
+                "type": "boolean"
+              },
+              "isCustomizable": {
+                "type": "boolean"
               },
               "published_at": {
                 "type": "string"
@@ -743,6 +715,111 @@
               }
             }
           },
+          "menu": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              },
+              "dishName": {
+                "type": "string"
+              },
+              "isVeg": {
+                "type": "boolean"
+              },
+              "price": {
+                "type": "integer"
+              },
+              "event": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "vendor_schedule": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "startDate": {
+                "type": "string"
+              },
+              "endDate": {
+                "type": "string"
+              },
+              "client": {
+                "type": "string"
+              },
+              "vendor": {
+                "type": "string"
+              },
+              "event": {
+                "type": "string"
+              },
+              "isBooked": {
+                "type": "boolean"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "extra_flowers": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "price": {
+                  "type": "integer"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "flowersIncluded": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -778,9 +855,6 @@
           "premiumDescription": {
             "type": "string"
           },
-          "vendor_schedule": {
-            "type": "string"
-          },
           "package": {
             "type": "string"
           },
@@ -792,6 +866,21 @@
             "items": {
               "type": "string"
             }
+          },
+          "menu": {
+            "type": "string"
+          },
+          "vendor_schedule": {
+            "type": "string"
+          },
+          "extra_flowers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "flowersIncluded": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

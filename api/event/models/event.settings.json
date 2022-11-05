@@ -51,10 +51,6 @@
     "premiumDescription": {
       "type": "text"
     },
-    "vendor_schedule": {
-      "via": "event",
-      "model": "vendor-schedule"
-    },
     "package": {
       "via": "events",
       "model": "package"
@@ -65,6 +61,20 @@
     "customer_reviews": {
       "via": "event",
       "collection": "customer-reviews"
+    },
+    "menu": {
+      "model": "menu",
+      "via": "event"
+    },
+    "vendor_schedule": {
+      "via": "event",
+      "model": "vendor-schedule"
+    },
+    "extra_flowers": {
+      "collection": "extra-flowers"
+    },
+    "flowersIncluded": {
+      "type": "text"
     }
   }
 }

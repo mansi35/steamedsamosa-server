@@ -646,9 +646,6 @@
                 "premiumDescription": {
                   "type": "string"
                 },
-                "vendor_schedule": {
-                  "type": "string"
-                },
                 "package": {
                   "type": "string"
                 },
@@ -660,6 +657,21 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "menu": {
+                  "type": "string"
+                },
+                "vendor_schedule": {
+                  "type": "string"
+                },
+                "extra_flowers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "flowersIncluded": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -714,6 +726,14 @@
               }
             }
           },
+          "isPremium": {
+            "type": "boolean",
+            "default": false
+          },
+          "isCustomizable": {
+            "type": "boolean",
+            "default": true
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -747,6 +767,14 @@
             "items": {
               "type": "string"
             }
+          },
+          "isPremium": {
+            "type": "boolean",
+            "default": false
+          },
+          "isCustomizable": {
+            "type": "boolean",
+            "default": true
           },
           "published_at": {
             "type": "string",

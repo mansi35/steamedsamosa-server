@@ -625,12 +625,6 @@
               "languages": {
                 "type": "string"
               },
-              "vendor_schedules": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "isVendor": {
                 "type": "boolean"
               },
@@ -639,6 +633,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "vendor_schedule": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -730,12 +727,6 @@
               "languages": {
                 "type": "string"
               },
-              "vendor_schedules": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "isVendor": {
                 "type": "boolean"
               },
@@ -744,6 +735,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "vendor_schedule": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -794,9 +788,6 @@
               "premiumDescription": {
                 "type": "string"
               },
-              "vendor_schedule": {
-                "type": "string"
-              },
               "package": {
                 "type": "string"
               },
@@ -809,6 +800,21 @@
                   "type": "string"
                 }
               },
+              "menu": {
+                "type": "string"
+              },
+              "vendor_schedule": {
+                "type": "string"
+              },
+              "extra_flowers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "flowersIncluded": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -819,6 +825,10 @@
                 "type": "string"
               }
             }
+          },
+          "isBooked": {
+            "type": "boolean",
+            "default": false
           },
           "published_at": {
             "type": "string",
@@ -844,6 +854,10 @@
           },
           "event": {
             "type": "string"
+          },
+          "isBooked": {
+            "type": "boolean",
+            "default": false
           },
           "published_at": {
             "type": "string",

@@ -1360,43 +1360,6 @@
           "languages": {
             "type": "string"
           },
-          "vendor_schedules": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "startDate": {
-                  "type": "string"
-                },
-                "endDate": {
-                  "type": "string"
-                },
-                "client": {
-                  "type": "string"
-                },
-                "vendor": {
-                  "type": "string"
-                },
-                "event": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "isVendor": {
             "type": "boolean"
           },
@@ -1438,6 +1401,43 @@
                 "updated_by": {
                   "type": "string"
                 }
+              }
+            }
+          },
+          "vendor_schedule": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "startDate": {
+                "type": "string"
+              },
+              "endDate": {
+                "type": "string"
+              },
+              "client": {
+                "type": "string"
+              },
+              "vendor": {
+                "type": "string"
+              },
+              "event": {
+                "type": "string"
+              },
+              "isBooked": {
+                "type": "boolean"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           }
@@ -1521,12 +1521,6 @@
           "languages": {
             "type": "string"
           },
-          "vendor_schedules": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
           "isVendor": {
             "type": "boolean"
           },
@@ -1535,6 +1529,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "vendor_schedule": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

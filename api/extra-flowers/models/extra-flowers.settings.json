@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "menus",
+  "collectionName": "extra_flowers",
   "info": {
-    "name": "Menu"
+    "name": "ExtraFlowers"
   },
   "options": {
     "increments": true,
@@ -11,21 +11,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "category": {
+    "name": {
       "type": "string"
     },
-    "dishName": {
-      "type": "text"
-    },
-    "isVeg": {
-      "type": "boolean"
+    "quantity": {
+      "type": "integer"
     },
     "price": {
       "type": "biginteger"
-    },
-    "event": {
-      "via": "menu",
-      "model": "event"
     }
   }
 }

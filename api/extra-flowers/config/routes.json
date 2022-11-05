@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/extra-flowers",
+      "handler": "extra-flowers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/extra-flowers/count",
+      "handler": "extra-flowers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/extra-flowers/:id",
+      "handler": "extra-flowers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/extra-flowers",
+      "handler": "extra-flowers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/extra-flowers/:id",
+      "handler": "extra-flowers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/extra-flowers/:id",
+      "handler": "extra-flowers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

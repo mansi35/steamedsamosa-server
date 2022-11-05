@@ -1,18 +1,19 @@
 {
   "paths": {
-    "/menus": {
+    "/extra-flowers": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the extra-flowers's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve extra-flowers document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Menu"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Menu"
+          "Extra-flowers"
         ],
         "parameters": [
           {
@@ -194,79 +195,16 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Create a new extra-flowers record",
         "responses": {
           "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Menu"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Menu"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewMenu"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/menus/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
+            "description": "Retrieve extra-flowers document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,22 +244,36 @@
         },
         "summary": "",
         "tags": [
-          "Menu"
+          "Extra-flowers"
         ],
-        "parameters": []
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewExtra-flowers"
+              }
+            }
+          }
+        }
       }
     },
-    "/menus/{id}": {
+    "/extra-flowers/count": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Retrieve the number of extra-flowers documents",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve extra-flowers document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Menu"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -359,7 +311,64 @@
         },
         "summary": "",
         "tags": [
-          "Menu"
+          "Extra-flowers"
+        ],
+        "parameters": []
+      }
+    },
+    "/extra-flowers/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "Find one extra-flowers record",
+        "responses": {
+          "200": {
+            "description": "Retrieve extra-flowers document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Extra-flowers"
         ],
         "parameters": [
           {
@@ -376,14 +385,18 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single extra-flowers record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve extra-flowers document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Menu"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -421,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Menu"
+          "Extra-flowers"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewMenu"
+                "$ref": "#/components/schemas/NewExtra-flowers"
               }
             }
           }
@@ -449,10 +462,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single extra-flowers record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single extra-flowers based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Menu"
+          "Extra-flowers"
         ],
         "parameters": [
           {
@@ -514,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Menu": {
+      "Extra-flowers": {
         "required": [
           "id"
         ],
@@ -522,96 +535,14 @@
           "id": {
             "type": "string"
           },
-          "category": {
+          "name": {
             "type": "string"
           },
-          "dishName": {
-            "type": "string"
-          },
-          "isVeg": {
-            "type": "boolean"
+          "quantity": {
+            "type": "integer"
           },
           "price": {
             "type": "integer"
-          },
-          "event": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "basicDescription": {
-                "type": "string"
-              },
-              "images": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "basicPrice": {
-                "type": "integer"
-              },
-              "customizable": {
-                "type": "boolean"
-              },
-              "premium": {
-                "type": "boolean"
-              },
-              "standardPrice": {
-                "type": "integer"
-              },
-              "premiumPrice": {
-                "type": "integer"
-              },
-              "standardDescription": {
-                "type": "string"
-              },
-              "premiumDescription": {
-                "type": "string"
-              },
-              "package": {
-                "type": "string"
-              },
-              "eventType": {
-                "type": "string"
-              },
-              "customer_reviews": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "menu": {
-                "type": "string"
-              },
-              "vendor_schedule": {
-                "type": "string"
-              },
-              "extra_flowers": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "flowersIncluded": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
           },
           "published_at": {
             "type": "string",
@@ -619,22 +550,16 @@
           }
         }
       },
-      "NewMenu": {
+      "NewExtra-flowers": {
         "properties": {
-          "category": {
+          "name": {
             "type": "string"
           },
-          "dishName": {
-            "type": "string"
-          },
-          "isVeg": {
-            "type": "boolean"
+          "quantity": {
+            "type": "integer"
           },
           "price": {
             "type": "integer"
-          },
-          "event": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -650,9 +575,5 @@
       }
     }
   },
-  "tags": [
-    {
-      "name": "Menu"
-    }
-  ]
+  "tags": []
 }

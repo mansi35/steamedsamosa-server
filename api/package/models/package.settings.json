@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "packages",
   "info": {
-    "name": "Package"
+    "name": "Package",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -42,6 +43,14 @@
     "customer_reviews": {
       "via": "package",
       "collection": "customer-reviews"
+    },
+    "isPremium": {
+      "type": "boolean",
+      "default": false
+    },
+    "isCustomizable": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

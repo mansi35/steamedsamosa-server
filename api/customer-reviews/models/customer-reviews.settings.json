@@ -25,12 +25,12 @@
       "via": "customer_reviews"
     },
     "event": {
-      "model": "event",
-      "via": "customer_reviews"
+      "via": "customer_reviews",
+      "model": "event"
     },
     "package": {
-      "model": "package",
-      "via": "customer_reviews"
+      "via": "customer_reviews",
+      "model": "package"
     },
     "vendor": {
       "plugin": "users-permissions",

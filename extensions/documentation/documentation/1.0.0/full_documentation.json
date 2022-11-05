@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/03/2022 6:30:22 PM"
+    "x-generation-date": "11/05/2022 1:02:07 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1065,6 +1065,530 @@
         "summary": "",
         "tags": [
           "Event"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/extra-flowers": {
+      "get": {
+        "deprecated": false,
+        "description": "Find all the extra-flowers's records",
+        "responses": {
+          "200": {
+            "description": "Retrieve extra-flowers document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Extra-flowers"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "post": {
+        "deprecated": false,
+        "description": "Create a new extra-flowers record",
+        "responses": {
+          "200": {
+            "description": "Retrieve extra-flowers document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Extra-flowers"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewExtra-flowers"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/extra-flowers/count": {
+      "get": {
+        "deprecated": false,
+        "description": "Retrieve the number of extra-flowers documents",
+        "responses": {
+          "200": {
+            "description": "Retrieve extra-flowers document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Extra-flowers"
+        ],
+        "parameters": []
+      }
+    },
+    "/extra-flowers/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "Find one extra-flowers record",
+        "responses": {
+          "200": {
+            "description": "Retrieve extra-flowers document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Extra-flowers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a single extra-flowers record",
+        "responses": {
+          "200": {
+            "description": "Retrieve extra-flowers document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Extra-flowers"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewExtra-flowers"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a single extra-flowers record",
+        "responses": {
+          "200": {
+            "description": "deletes a single extra-flowers based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Extra-flowers"
         ],
         "parameters": [
           {
@@ -4952,12 +5476,6 @@
               "languages": {
                 "type": "string"
               },
-              "vendor_schedules": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "isVendor": {
                 "type": "boolean"
               },
@@ -4966,6 +5484,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "vendor_schedule": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -5016,9 +5537,6 @@
               "premiumDescription": {
                 "type": "string"
               },
-              "vendor_schedule": {
-                "type": "string"
-              },
               "package": {
                 "type": "string"
               },
@@ -5030,6 +5548,21 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "menu": {
+                "type": "string"
+              },
+              "vendor_schedule": {
+                "type": "string"
+              },
+              "extra_flowers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "flowersIncluded": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -5076,6 +5609,12 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "isPremium": {
+                "type": "boolean"
+              },
+              "isCustomizable": {
+                "type": "boolean"
               },
               "published_at": {
                 "type": "string"
@@ -5170,12 +5709,6 @@
               "languages": {
                 "type": "string"
               },
-              "vendor_schedules": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "isVendor": {
                 "type": "boolean"
               },
@@ -5184,6 +5717,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "vendor_schedule": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -5339,40 +5875,6 @@
           "premiumDescription": {
             "type": "string"
           },
-          "vendor_schedule": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "startDate": {
-                "type": "string"
-              },
-              "endDate": {
-                "type": "string"
-              },
-              "client": {
-                "type": "string"
-              },
-              "vendor": {
-                "type": "string"
-              },
-              "event": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "package": {
             "required": [
               "id"
@@ -5407,6 +5909,12 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "isPremium": {
+                "type": "boolean"
+              },
+              "isCustomizable": {
+                "type": "boolean"
               },
               "published_at": {
                 "type": "string"
@@ -5463,6 +5971,111 @@
               }
             }
           },
+          "menu": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              },
+              "dishName": {
+                "type": "string"
+              },
+              "isVeg": {
+                "type": "boolean"
+              },
+              "price": {
+                "type": "integer"
+              },
+              "event": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "vendor_schedule": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "startDate": {
+                "type": "string"
+              },
+              "endDate": {
+                "type": "string"
+              },
+              "client": {
+                "type": "string"
+              },
+              "vendor": {
+                "type": "string"
+              },
+              "event": {
+                "type": "string"
+              },
+              "isBooked": {
+                "type": "boolean"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "extra_flowers": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "price": {
+                  "type": "integer"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "flowersIncluded": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5498,9 +6111,6 @@
           "premiumDescription": {
             "type": "string"
           },
-          "vendor_schedule": {
-            "type": "string"
-          },
           "package": {
             "type": "string"
           },
@@ -5512,6 +6122,67 @@
             "items": {
               "type": "string"
             }
+          },
+          "menu": {
+            "type": "string"
+          },
+          "vendor_schedule": {
+            "type": "string"
+          },
+          "extra_flowers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "flowersIncluded": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      },
+      "Extra-flowers": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "integer"
+          },
+          "price": {
+            "type": "integer"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewExtra-flowers": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "integer"
+          },
+          "price": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -5545,6 +6216,85 @@
           "price": {
             "type": "integer"
           },
+          "event": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "basicDescription": {
+                "type": "string"
+              },
+              "images": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "basicPrice": {
+                "type": "integer"
+              },
+              "customizable": {
+                "type": "boolean"
+              },
+              "premium": {
+                "type": "boolean"
+              },
+              "standardPrice": {
+                "type": "integer"
+              },
+              "premiumPrice": {
+                "type": "integer"
+              },
+              "standardDescription": {
+                "type": "string"
+              },
+              "premiumDescription": {
+                "type": "string"
+              },
+              "package": {
+                "type": "string"
+              },
+              "eventType": {
+                "type": "string"
+              },
+              "customer_reviews": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "menu": {
+                "type": "string"
+              },
+              "vendor_schedule": {
+                "type": "string"
+              },
+              "extra_flowers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "flowersIncluded": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5564,6 +6314,9 @@
           },
           "price": {
             "type": "integer"
+          },
+          "event": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -5709,9 +6462,6 @@
                 "premiumDescription": {
                   "type": "string"
                 },
-                "vendor_schedule": {
-                  "type": "string"
-                },
                 "package": {
                   "type": "string"
                 },
@@ -5723,6 +6473,21 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "menu": {
+                  "type": "string"
+                },
+                "vendor_schedule": {
+                  "type": "string"
+                },
+                "extra_flowers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "flowersIncluded": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -5777,6 +6542,14 @@
               }
             }
           },
+          "isPremium": {
+            "type": "boolean",
+            "default": false
+          },
+          "isCustomizable": {
+            "type": "boolean",
+            "default": true
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5810,6 +6583,14 @@
             "items": {
               "type": "string"
             }
+          },
+          "isPremium": {
+            "type": "boolean",
+            "default": false
+          },
+          "isCustomizable": {
+            "type": "boolean",
+            "default": true
           },
           "published_at": {
             "type": "string",
@@ -5921,12 +6702,6 @@
               "languages": {
                 "type": "string"
               },
-              "vendor_schedules": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "isVendor": {
                 "type": "boolean"
               },
@@ -5935,6 +6710,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "vendor_schedule": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -6026,12 +6804,6 @@
               "languages": {
                 "type": "string"
               },
-              "vendor_schedules": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "isVendor": {
                 "type": "boolean"
               },
@@ -6040,6 +6812,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "vendor_schedule": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -6090,9 +6865,6 @@
               "premiumDescription": {
                 "type": "string"
               },
-              "vendor_schedule": {
-                "type": "string"
-              },
               "package": {
                 "type": "string"
               },
@@ -6105,6 +6877,21 @@
                   "type": "string"
                 }
               },
+              "menu": {
+                "type": "string"
+              },
+              "vendor_schedule": {
+                "type": "string"
+              },
+              "extra_flowers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "flowersIncluded": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -6115,6 +6902,10 @@
                 "type": "string"
               }
             }
+          },
+          "isBooked": {
+            "type": "boolean",
+            "default": false
           },
           "published_at": {
             "type": "string",
@@ -6140,6 +6931,10 @@
           },
           "event": {
             "type": "string"
+          },
+          "isBooked": {
+            "type": "boolean",
+            "default": false
           },
           "published_at": {
             "type": "string",
@@ -6297,12 +7092,6 @@
                 "languages": {
                   "type": "string"
                 },
-                "vendor_schedules": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "isVendor": {
                   "type": "boolean"
                 },
@@ -6311,6 +7100,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "vendor_schedule": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -6534,43 +7326,6 @@
           "languages": {
             "type": "string"
           },
-          "vendor_schedules": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "startDate": {
-                  "type": "string"
-                },
-                "endDate": {
-                  "type": "string"
-                },
-                "client": {
-                  "type": "string"
-                },
-                "vendor": {
-                  "type": "string"
-                },
-                "event": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "isVendor": {
             "type": "boolean"
           },
@@ -6612,6 +7367,43 @@
                 "updated_by": {
                   "type": "string"
                 }
+              }
+            }
+          },
+          "vendor_schedule": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "startDate": {
+                "type": "string"
+              },
+              "endDate": {
+                "type": "string"
+              },
+              "client": {
+                "type": "string"
+              },
+              "vendor": {
+                "type": "string"
+              },
+              "event": {
+                "type": "string"
+              },
+              "isBooked": {
+                "type": "boolean"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           }
@@ -6695,12 +7487,6 @@
           "languages": {
             "type": "string"
           },
-          "vendor_schedules": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
           "isVendor": {
             "type": "boolean"
           },
@@ -6709,6 +7495,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "vendor_schedule": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
