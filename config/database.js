@@ -9,7 +9,7 @@ module.exports = ({ env }) => ({
         port: env.int('DATABASE_PORT', 27017),
         database: env('DATABASE_NAME', 'steamedsamosa-server'),
         username: env('DATABASE_USERNAME', 'SaMoSA'),
-        password: env('DATABASE_PASSWORD', '9XOEyZEF48OvHvaZ'),
+        password: env('DATABASE_PASSWORD', ''),
       },
       options: {
         authenticationDatabase: env('AUTHENTICATION_DATABASE', null),
